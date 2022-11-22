@@ -14,6 +14,9 @@
 
         <!-- CSS -->
         <link rel="stylesheet" href="static/css/style.css">
+
+        <!-- FontAwesome -->
+        <script src="https://kit.fontawesome.com/3900eaac48.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <!--
@@ -31,23 +34,44 @@
             Aclaración: No se pueden usar tablas para resolver la grilla con las imágenes
             de los medios.
         -->
+        <!-- Header, posible navbar dentro de este elemento-->
         <header>
-            <h1 class="align-left">Medios de comunicación</h1>
+            <h1>Medios de comunicación</h1>
         </header>
+
+        <!-- Section, lo principal, se listan los medios.-->
         <section>
             <h2>Argentina</h3>
+
+            <!-- Referirse al CSS de este container, la idea es que sean botones con la imagen y el nombre del medio. Se usa flexbox. -->
             <article class="container-medios">
+                
                 <div class="medio-imagen">
-                    <img src="static/images/infobae.jpg" alt="Logo de Infobae">
-                    <p>Infobae</p>
+                    <a href="https://www.infobae.com" target="_blank">
+                        <img src="static/images/infobae.jpg" alt="Logo de Infobae">
+                        <p>Infobae</p>
+                    </a>
                 </div>
+                
                 <div class="medio-imagen">
-                    <img src="static/images/ambitofinanciero.png" alt="Logo de Ámbito Financiero">
-                    <p>Ámbito Financiero</p>
+                    <a href="https://www.ambito.com/" target="_blank">
+                        <img src="static/images/ambitofinanciero.png" alt="Logo de Ámbito Financiero">
+                        <p>Ámbito Financiero</p>
+                    </a>
+                </div>
+
+                <div class="medio-imagen">
+                    <a href="https://tn.com.ar/">
+                        <img src="static/images/TN.png" alt="Logo de TN">
+                        <p>TN</p>
+                    </a>
                 </div>
             </article>
         </section>
         <footer>
+            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <p>Website by Ramiro Escudero, 2022.</p>
         </footer>
     </body>
 </html>

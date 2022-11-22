@@ -2,16 +2,24 @@ body {
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
     box-sizing: border-box;
-}
-
-.align-left {
-    text-align: left;
+    background-image: url(../images/bgimage.jpg);
+    height: 100vh;
 }
 
 header {
     border-bottom: 5px solid black;
-    padding-bottom: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    background-color: lightgray;
 }
+
+section {
+    border: 1px solid white;
+    background-color: antiquewhite;
+    height: 80vh;
+}
+
 
 h2 {
     text-align: center;
@@ -20,17 +28,37 @@ h2 {
 .container-medios {
     display: flex;
     flex-wrap: wrap;
+    flex: 1 1 25%;
     align-items: center;
     justify-content: center;
     gap: 1rem;
 }
 
 .medio-imagen {
+    background-color: wheat;
     border: 2px solid;
     padding: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 15%;
+    text-align: center;
+    transition: transform .2s;
+}
+
+.medio-imagen:hover {
+    transform: scale(1.2);
 }
 
 .medio-imagen img {
     width: 64px;
     height: 64px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    text-align: center;
+    border: 1px solid white;
+    margin-top: 1rem;
+    background-color: blanchedalmond;
 }
