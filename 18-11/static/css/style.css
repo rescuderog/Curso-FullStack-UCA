@@ -1,0 +1,36 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+.align-left {
+    text-align: left;
+}
+
+header {
+    border-bottom: 5px solid black;
+    padding-bottom: 1rem;
+}
+
+h2 {
+    text-align: center;
+}
+
+.container-medios {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.medio-imagen {
+    border: 2px solid;
+    padding: 1rem;
+}
+
+.medio-imagen img {
+    width: 64px;
+    height: 64px;
+}
